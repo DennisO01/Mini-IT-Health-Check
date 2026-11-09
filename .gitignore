@@ -1,0 +1,16 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+
+# Generated files
+config.json
+server.txt
+health-report.txt
+*.log
+
+# Python
+__pycache__/
+*.pyc
