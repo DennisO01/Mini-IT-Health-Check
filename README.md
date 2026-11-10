@@ -119,3 +119,15 @@ Koden har körts och kontrollerats i min egen utvecklingsmiljö. Jag ansvarar sj
 Projektets GitHub-repository:
 
 https://github.com/DennisO01/Mini-IT-Health-Check
+
+## 11. Sluttest
+
+Följande tester har genomförts:
+
+Normal körning: Terraform visade att inga ändringar behövdes och Python rapporterade att alla kontroller lyckades.
+
+Feltest: Jag bytte tillfälligt namn på server.txt. PowerShell upptäckte att filen saknades och Python returnerade exitkod 1.
+
+Återställning: Terraform återskapade den saknade filen. Efteråt fungerade hälsokontrollen igen med exitkod 0.
+
+Testerna visar att projektet både kan upptäcka ett fel i testmiljön och verifiera att felet har åtgärdats.
